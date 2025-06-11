@@ -9,7 +9,8 @@ from sklearn.model_selection import train_test_split
 # Load and preprocess data
 @st.cache_data
 def load_data_and_train():
-    df = pd.read_csv(r"C:\Users\HP\Downloads\bank+marketing\bank\bank-full.csv", sep=';')
+    df = pd.read_csv("bank-full.csv", sep=';')
+
 
     label_encoders = {}
     df_encoded = df.copy()
